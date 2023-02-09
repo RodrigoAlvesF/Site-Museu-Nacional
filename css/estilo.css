@@ -1,0 +1,57 @@
+/*Estrutura padrão do site*/
+body {
+    background: #f4f2ec url(../img/fundo.png) repeat-x;
+    font: 12px "Lucida Grande", "Lucinda Sans Unicode", Arial, sans-serif; /*Essas serão as configurações padrões do site*/ 
+}
+
+/*Configuramos a estrutura do container do site*/
+#container {
+    width: 1080px; /*indicamos a largura do container do site*/
+    margin: 0 auto; /*Para centralizar*/
+}
+
+/*LOGO*/
+
+#logo{ /*indicamos que a logo ficará a esquerda para abrir espaço para a navegação ficar a direita*/
+    float: left;
+}
+
+#logo a{
+    width: 248px;
+    height: 21px;
+    text-indent: -9999px; /*Para tirarmos o texto da visualizaçãoe ficar somente a img*/
+    display: block; /*Indent só funciona com o block*/
+    background: url(../img/logo.png) no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+/*Barra de navegação*/
+
+header {
+    padding: 15px 0; /*Espaçamento da parte do topo entre cabeçalho e página*/
+}
+
+nav li {
+    float: left; /*Para ficar lado a lado, os textos vão ser arrastador para a esquerda enquanto a estrutura UL esta formata para ficar a direita*/
+    list-style: none;
+}
+
+nav a{
+    padding-bottom: 3px;
+    color: #af670a;
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-right: 25px; /*Para espaçar as palavras (caso usassemos padding, cresceriamos a caixa)*/
+}
+
+nav a:hover{
+    color: #227115;
+    border-bottom: 1px solid #535858;
+}
+
+nav ul {
+    float: right;
+    margin: 20px; /*Para centralizar com a logo temos que compensar pois é baseada na linha da ponta e não no centro do texto*/
+}
