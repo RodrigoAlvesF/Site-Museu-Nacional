@@ -37,6 +37,133 @@
             </nav>
 
         </header>
+
+        <div id="conteudo"> <!--Criamos o container de conteudo principal-->
+            <section id="capa"> <!--criaremos uma imagem de apresentação do site-->
+                <img src="img/museu.png">
+
+            </section> <!--Fim apresentação-->
+
+            <section id="postagens"><!--Inicio principal-->
+
+                <article id="video">
+                    <h3>Vídeo: Conheça o museu</h3>
+                    <iframe width="310" height="170" src="https://www.youtube.com/embed/RGUYb-hivrc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </article>
+
+                <article id="mapa">
+                    <h3>Mapa: Encontre o museu</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.2063112591054!2d-43.230648773046866!3d-22.90576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997e58a085b7af%3A0x4d11e9a933d38ce3!2sMuseu%20Nacional%20-%20UFRJ!5e0!3m2!1spt-BR!2sbr!4v1676065973214!5m2!1spt-BR!2sbr" width="310" height="170" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </article>
+
+                <article id="exposicoes">
+                    <h3>Exposições</h3>
+                    <ul>
+                        <li>
+                            <a href="#">Os assustadores insetos</a>
+                        </li>
+
+                        <li>
+                            <a href="#">O crânio de Luzia, a mulher mais antiga do Brasil</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Preguiça gigante e tigre-dentes-de-sabre</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Plantas do Brasil central</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Teresa Cristina: A imperatriz Arqueóloga</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Arte com dinossauros - Paleoarte</a>
+                        </li>
+
+                        <li class="leia">
+                            <a href="#"><strong>Veja todos</strong></a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article id="historia">
+                    <h3>200 Anos de história</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, sunt omnis doloremque fugit maiores cum neque ducimus nulla quaerat, praesentium modi. Aspernatur hic adipisci deserunt facilis exercitationem perferendis assumenda aut.</p>
+                    <a href="#"><strong>Leia mais</strong></a>
+                </article>
+
+            </section> <!--Fim principal-->
+
+        
+        </div> <!--Fim container conteudo principal-->
+
+        <aside> <!--Aside serve para indicar o conteudo lateral-->
+            <section id="depoimento">
+                <img src="img/depoimento.png">
+            </section>
+
+            <section id="visita">
+                <h4>Faça uma visita</h4>
+                <form> <!--Todo conteúdo preenchível deve estar dentro do form--> 
+                    <fieldset>
+                        <legend>
+                            Selecione uma data
+                        </legend>
+                        <label for="data">Data</label>
+                        <input class="campo" type="date" name="data" value="dd/mm/aaaa">
+
+                        <label for="qtd">Qtd de pessoas</label>
+                        <input class="campo numero" type="number" id="qtd" value="1">
+                
+                        <input class="submit" type="submit" value="Verificar disponibilidade">
+                    </fieldset>
+                </form>
+            </section> <!--Fim seção visita-->
+
+            <section id="galeria"> <!--Inicio Galeria-->
+
+                <h1>Galeria de fotos</h1>
+                
+                <a href="#">
+                    <img src="img/imagem1.jpg" height="93" width="93">
+                </a>
+
+                <a href="#">
+                    <img src="img/imagem2.jpg" height="93" width="93">
+                </a>
+
+                <a href="#">
+                    <img src="img/imagem3.jpg" height="93" width="93">
+                </a>
+
+                <a href="#">
+                    <img src="img/imagem4.jpg" height="93" width="93">
+                </a>
+
+            </section> <!--Fim galeria-->
+
+        </aside> <!--Fim do conteudo lateral-->
+
+        <footer>
+            <nav><!--Criamos a barra de navegação-->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Exposições</a></li>
+                    <li><a href="#">Pesquisa</a></li>
+                    <li><a href="#">Acervo</a></li>
+                    <li><a href="#">Vídeos</a></li>
+                    <li><a href="#">Fotos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <p>
+                2019 <a href="">Museu Nacional</a> - Todos os direitos reservados.
+            </p>
+        </footer>
+
     </div> <!--Fim container-->
 
 

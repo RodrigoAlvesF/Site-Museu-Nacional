@@ -27,18 +27,20 @@ body {
 a {
     text-decoration: none;
 }
-/*Barra de navegação*/
+
+/*Barra de navegação topo*/
 
 header {
     padding: 15px 0; /*Espaçamento da parte do topo entre cabeçalho e página*/
+    height: 60px;
 }
 
-nav li {
+header nav li {
     float: left; /*Para ficar lado a lado, os textos vão ser arrastador para a esquerda enquanto a estrutura UL esta formata para ficar a direita*/
     list-style: none;
 }
 
-nav a{
+header nav a{
     padding-bottom: 3px;
     color: #af670a;
     font-size: 1em;
@@ -46,12 +48,202 @@ nav a{
     margin-right: 25px; /*Para espaçar as palavras (caso usassemos padding, cresceriamos a caixa)*/
 }
 
-nav a:hover{
+header nav a:hover{
     color: #227115;
     border-bottom: 1px solid #535858;
 }
 
-nav ul {
+header nav ul {
     float: right;
     margin: 20px; /*Para centralizar com a logo temos que compensar pois é baseada na linha da ponta e não no centro do texto*/
+}
+
+
+/****************container principal****************/
+
+#conteudo {
+    width: 710px;
+    float: left; /*Indicamos que o conteudo principal ficará na esquerda*/
+    margin-bottom: 20px;
+}
+/*O container tem um total de 1080px, 710+350 totaliza 1060px, sobrando assim 20px para espaçar um conteúdo do outro*/
+aside {
+    width: 350px;
+    float: right; /*Indicamos que o conteudo lateral ficará na direita*/
+    background: #ebe7dd;
+    margin-bottom: 20px;
+}
+
+section#visita{
+    background: #cdc8b1;
+    padding: 10px 27px 18px 27px; /*superior 10, direita 27, inferior 18 e esquerda 27*/
+    margin-top: 10px; /*espaçar do depoimento*/
+}
+
+h4 {
+    color: #86521a;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    margin-left: 2px;
+}
+
+/***********Formulários***********/
+
+input { /*Para editarmos as barras preenchiveis*/
+    width: 80px;
+    height: 20px;
+    border: none; /*Para remover a borda em volta da barra de digitação*/
+    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+input.campo {
+    border: 1px solid #ada484;
+}
+
+input.numero {
+    border: 1px solid #ada484;
+    width: 30px; /*Quando formos fazer uma alteração única, podemos também usar o style direto no html para poupar linha no css*/
+}
+
+input.submit {
+    width: 100%;
+    height: 40px;
+    font-size: 1.5em;
+    background: #867f65;
+    color: white;
+    display: block;
+    align-items: center;
+}
+
+fieldset {
+    border: none;
+}
+
+legend {
+    display: none;
+}
+
+/***********Galeria de fotos***********/
+
+#galeria {
+    padding: 0 29px 0 27px; /*Para centralizar as fotos na section*/
+}
+
+#galeria h1{
+    color: #86521a;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+
+#galeria a{
+    background: url(../img/fundo-foto.png) no-repeat; /*Fundo de foto girando*/
+    float: left; /*Para que fiquem alinhados um por um para a esquerda*/
+    padding: 17px 15px 25px 17px; /*Dessa forma quadriculamos a caixa de cada conteúdo*/
+    margin: 10px 0 0 20px;
+}
+
+#galeria img {
+    margin-left: px;
+    margin-top: 3px;
+}
+
+h3 {
+    color: #227115;
+    font-size: 1em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#postagens {
+    width: 710px;
+
+}
+
+#video {
+    float: left;
+    width: 310px;
+    margin-left: 25px;
+}
+
+#mapa {
+    float: right;
+    width: 310px;
+    margin-right: 25px;
+}
+
+#exposicoes {
+    float: left;
+    width: 310px;
+    margin: 15px 0 0 25px;
+}
+
+#historia {
+    float: right;
+    height: 151px;
+    width: 310px;
+    margin-right: 25px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+#historia strong{
+    color: #86521a;
+}
+
+#historia strong:hover{
+    color: #227115;
+}
+
+footer {
+    clear: both;
+    padding: 20px 0 30px 0;
+    text-align: center;
+    background: url(../img/fundo-rodape.png)no-repeat center top;
+}
+
+#exposicoes a{
+    color: #86521a;
+}
+
+#exposicoes a:hover{
+    color: #227115;
+}
+
+.leia { 
+    margin-top: 5px;
+    list-style: none;
+}
+
+footer nav li {
+    display: inline-block; /*Para horizontar devemos aplicar na LI*/
+    list-style: none;
+}
+
+footer nav a{
+    margin-left: 20px;
+    padding-bottom: 3px;
+    color: #af670a;
+    font-size: 1.1em;
+}
+
+footer nav a:hover{
+    color: #227115;
+}
+
+footer p {
+    font-size: 1.1em;
+}
+
+footer p a {
+    color: #86521a;
+    margin: 0 5px 0 5px;
+}
+
+footer p a:hover {
+    color: #227115;
 }
