@@ -91,7 +91,7 @@ h4 {
 /***********Formulários***********/
 
 input { /*Para editarmos as barras preenchiveis*/
-    width: 80px;
+    width: 90px;
     height: 20px;
     border: none; /*Para remover a borda em volta da barra de digitação*/
     font-size: 1em;
